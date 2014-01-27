@@ -4,8 +4,8 @@ body {
 }
 
 #main_container {
-	margin: 10px auto;
-	width: 800px;
+  margin: 10px auto;
+  width: 800px;
 }
 
 .heading {
@@ -19,22 +19,22 @@ table {
 }
 
 .box_cell {
-	border: 1px solid black;
-	width: 150px;
-	height: 150px;
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
   border-radius: 75px;
   opacity: .75;
   box-shadow: 2px 2px 0px #888888
 }
 
-.hover {
+.box_cell:hover{
   background-color: #aaa;
 }
 
-.red {
-  background-color: red;
+.red, .red:hover{
+  background-color: red !important;
 }
 
-.blue {
-  background-color: blue;
+.blue, .blue:hover{
+  background-color: blue !important;
 }
