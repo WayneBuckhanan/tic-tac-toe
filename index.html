@@ -2,14 +2,16 @@
 <head>
     <meta charset="utf-8">
     <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/buttons.css" type="text/css" media="screen" charset="utf-8">
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/buttons.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="js/tic_tac_toe.js"></script>
 </head>
 <body>
-    <div id="main_container">
+    <div id="board">
         <h1 id="main_heading" class="heading" >Tic! Tac! Toe!</h1>
         <table>
             <tbody>
@@ -36,6 +38,13 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+    <div id="controls">
+        <a href="#" class="button button-block button-rounded button-primary button-large play" id="free_space">Go in a free space</a>
+        <a href="#" class="button button-block button-rounded button-action button-large play" id="free_side">Go in a free side</a>
+        <a href="#" class="button button-block button-rounded button-highlight button-large play" id="free_corner">Go in a free corner</a>
+        <a href="#" class="button button-block button-rounded button-caution button-large" id="binary">Random Binary Digit</a>
+        <div id="message"></div>
     </div>
 </body>
 </html>

@@ -3,11 +3,22 @@ body {
   background-image:url('../img/wavegrid.png');
 }
 
-#main_container {
+#board {
   margin: 10px auto;
-  width: 800px;
+  width:50%;
+  float:left;
+  height:100%;
 }
-
+#controls {
+    float:right;
+    width:49%;
+    height:100%;
+    color:#000;
+}
+#message {
+    text-align: center;
+    font-size: 100px;
+}
 .heading {
   text-align: center;
   font-family: 'Finger Paint', cursive;
