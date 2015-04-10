@@ -15,8 +15,8 @@ function cell_index(cell) { return $(cell).data("row")*3 + $(cell).data("col"); 
 // Toggles turn between 1 and 2
 function inc_turn(turn) { return turn % 2 + 1; }
 
-// returns true if the given index is a side else false
-function is_side(i) { return i%2 == 1; }
+// returns true if the given index is a edge else false
+function is_edge(i) { return i%2 == 1; }
 // returns true if the given index is a corner else false
 function is_corner(i) { return i%2 == 0 && i != 4; }
 
@@ -66,7 +66,7 @@ function is_not_false(v) { return !(v === false); }
 
 // Random options
 function free_space() { return random_element(empty_indices(game)); }
-function free_side() { return random_element(empty_indices(game).filter(is_side));}
+function free_edge() { return random_element(empty_indices(game).filter(is_edge));}
 function free_corner() { return random_element(empty_indices(game).filter(is_corner));}
 function binary() { return random_int(2); }
 
