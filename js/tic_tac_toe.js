@@ -77,7 +77,8 @@ function play_at(i) {
     
     update_view(i);
     if(is_game_over(i)) {
-        alert("Game Over!"+game+'\n'+is_game_over(i)+'\n'+check_col(i)+check_row(i)+check_diag(i));
+        //alert("Game Over!"+game+'\n'+is_game_over(i)+'\n'+check_col(i)+check_row(i)+check_diag(i));
+        alert("Game Over!");
         location.reload();
     }
     else {
